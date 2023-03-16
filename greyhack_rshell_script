@@ -1,0 +1,6 @@
+socket_ip = "[server_ip]"
+socket_port = "[server_port]".to_int
+process = "[process_name]"
+
+rshell = include_lib("/lib/metaxploit.so")
+meta = rshell.rshell_client(socket_ip, socket_port, process)
